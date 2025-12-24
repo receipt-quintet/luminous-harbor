@@ -34,9 +34,9 @@ All operations are strictly read-only.
 
 - contracts/  
   Solidity contracts deployed on Base Sepolia for testnet validation:
-  - your_contract.sol — minimal deployment validation contract  
-  - your_contract.sol — stateful contract for interaction testing  
-  - your_contract.sol — read-only contract for queries  
+  - BaseStorageManager.sol — A contract designed to manage storage operations on Base Sepolia. Users can store, retrieve, and delete simple data types. Ideal for demonstrating how smart contracts handle basic data storage and retrieval, useful for tutorials and basic decentralized app (dApp) examples.  
+  - BaseVotingSystem.sol — A simple voting contract to demonstrate how users can cast votes and tally results on-chain. This contract is a great example for governance tutorials, voting systems in dApps, and showcasing Base Sepolia's handling of decentralized decision-making  
+  - BaseNFTMarketplace.sol — A simple contract designed for listing and purchasing NFTs on Base Sepolia. This contract is intended for demos showcasing how to build an NFT marketplace, handling token transfers and user interactions within decentralized applications  
 
 - package.json  
   Dependency manifest referencing Coinbase SDKs and multiple Base + Coinbase repositories.
@@ -60,15 +60,15 @@ This project integrates with Coinbase and Base ecosystems:
 
 MIT License
 
-Copyright (c) 2025 YOUR_NAME
+Copyright (c) 2025
 
 ---
 
 ## Author
 
-GitHub: https://github.com/your-handle  
-Email: you@example.com  
-Public contact: https://x.com/your-handle  
+GitHub: https://github.com/receipt-quintet  
+Email: receipt.quintet_0s@icloud.com  
+Public contact: https://x.com/rinoshimaru9  
 
 ---
 
@@ -80,25 +80,25 @@ Network: Base Sepolia
 chainId (decimal): 84532  
 Explorer: https://sepolia.basescan.org  
 
-Contract #1 address:  
-your_address
+Contract BaseStorageManager.sol address:  
+0x23D7A1C29bF46C7A3b74e90A7eB944c2F4F68B94
 
 Deployment and verification:
-- https://sepolia.basescan.org/address/your_address
-- https://sepolia.basescan.org/your_address/0#code  
+- https://sepolia.basescan.org/address/0x23D7A1C29bF46C7A3b74e90A7eB944c2F4F68B94
+- https://sepolia.basescan.org/0x23D7A1C29bF46C7A3b74e90A7eB944c2F4F68B94/0#code  
 
-Contract #2 address:  
-your_address
-
-Deployment and verification:
-- https://sepolia.basescan.org/address/your_address
-- https://sepolia.basescan.org/your_address/0#code  
-
-Contract #3 address:  
-your_address
+Contract BaseVotingSystem.sol address:  
+0x5F9b6C0aD1F89C9B7B2F0C5D64E7cF4D2A389FB8
 
 Deployment and verification:
-- https://sepolia.basescan.org/address/your_address
-- https://sepolia.basescan.org/your_address/0#code  
+- https://sepolia.basescan.org/address/0x5F9b6C0aD1F89C9B7B2F0C5D64E7cF4D2A389FB8
+- https://sepolia.basescan.org/0x5F9b6C0aD1F89C9B7B2F0C5D64E7cF4D2A389FB8/0#code  
+
+Contract BaseNFTMarketplace.sol address:  
+0x7C1A23E8e2B9F2B4F1C1d7B7A8C5D3B2D7994535
+
+Deployment and verification:
+- https://sepolia.basescan.org/address/0x7C1A23E8e2B9F2B4F1C1d7B7A8C5D3B2D7994535
+- https://sepolia.basescan.org/0x7C1A23E8e2B9F2B4F1C1d7B7A8C5D3B2D7994535/0#code  
 
 These testnet deployments provide a controlled environment for validating Base tooling, account abstraction flows, and read-only onchain interactions prior to Base Mainnet usage.
